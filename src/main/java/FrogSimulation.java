@@ -28,7 +28,7 @@ public class FrogSimulation
 	
 	public double runSimulations(int num)
 	{ 
-		int count;
+		int count=0;
 		for(int i =0; i<num; i++)
 			if(simulate())
 				count++;
