@@ -20,7 +20,7 @@ public class FrogSimulation
 			sum += hopDistance();
 			if(sum >= goalDistance)
 				return true;
-			if(sum < 0)
+			else if(sum < 0)
 				return false;
 		}
 		return false;
