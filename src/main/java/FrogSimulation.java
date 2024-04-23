@@ -18,9 +18,9 @@ public class FrogSimulation
 		int sum;
 		for(int i = 0; i < maxHops; i++) {
 			sum += hopDistance();
-			if(hopDistance() >= goalDistance)
+			if(sum >= goalDistance)
 				return true;
-			if(hopDistance() < 0)
+			if(sum < 0)
 				return false;
 		}
 		return false;
@@ -29,7 +29,7 @@ public class FrogSimulation
 	public double runSimulations(int num)
 	{ 
 		int count;
-		for(int i =0; I<num; i++)
+		for(int i =0; i<num; i++)
 			if(simulate())
 				count++;
 		return (double)count/num;
